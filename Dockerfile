@@ -1,4 +1,4 @@
-FROM MOGAMBO-XD/MirrorBot
+FROM mogambo-xd/mirrorbot
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
