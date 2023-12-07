@@ -1,5 +1,20 @@
 
+# Installation and Run
 
+First insert your BOT_TOKEN at `./start.sh`
+```bash
+export BOT_TOKEN="BOT TOKEN HERE"
+``` 
+
+Then build docker image with this command
+```bash
+$ docker build --tag=mogambo1/mirrorbot:latest -f Dockerfile . 
+```
+
+and now you can run it with this command 
+```bash
+$ docker run -d --name mirrorbot --network host mogambo1/mirrorbot:latest
+```
 
 **NOTE**: Base repository added recently its own rclone implementation. 
 
